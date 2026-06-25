@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-primary-50: #f0f9ff;
+  --color-primary-100: #e0f2fe;
+  --color-primary-200: #bae6fd;
+  --color-primary-500: #0ea5e9;
+  --color-primary-600: #0284c7;
+  --color-primary-700: #0369a1;
+  --color-primary-900: #0c4a6e;
+  --font-sans: 'Inter', sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Reusable button styles */
+.btn-primary {
+  background-color: var(--color-primary-600);
+  color: #fff;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 0.05);
+  transition: background-color 0.2s;
+  outline: none;
+}
+.btn-primary:hover {
+  background-color: var(--color-primary-700);
+}
+.btn-primary:focus {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px var(--color-primary-500);
+}
+
+.btn-secondary {
+  background-color: #fff;
+  color: #334155;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #cbd5e1;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 0.05);
+  transition: background-color 0.2s;
+  outline: none;
+}
+.btn-secondary:hover {
+  background-color: #f8fafc;
+}
+.btn-secondary:focus {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #64748b;
+}
+
+.btn-danger {
+  background-color: #dc2626;
+  color: #fff;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 0.05);
+  transition: background-color 0.2s;
+  outline: none;
+}
+.btn-danger:hover {
+  background-color: #b91c1c;
+}
+.btn-danger:focus {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #ef4444;
+}
+
+.input-field {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.5rem;
+  outline: none;
+  transition: all 0.2s;
+  background-color: #fff;
+}
+.input-field:focus {
+  border-color: var(--color-primary-500);
+  box-shadow: 0 0 0 2px var(--color-primary-100);
+}
